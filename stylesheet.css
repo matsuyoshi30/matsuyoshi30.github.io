@@ -8,14 +8,15 @@ body {
 
 .container {
     text-align: center;
+    vertical-align: middle;
     line-height: 1.5;
     color: #333333;
     user-select: none;
-    margin: 0 auto;
+    margin-top: 20%;
 }
 
 .header {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 h1 {
@@ -36,18 +37,25 @@ h1, h2 {
     position: relative;
 }
 
+.link-list {
+    letter-spacing: 1.5px;
+}
+
 .short-introduction {
     display: inline-block;
     text-align: left;
+    margin-bottom: 10px;
 }
 
 .short-introduction p {
-    line-height: 1em;
+    line-height: 2em;
 }
+
 
 p {
     font-size: 14px;
     line-height: 2em;
+    margin: 0;
 }
 
 p a {
