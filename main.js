@@ -7,37 +7,32 @@ const canvas = document.createElement('canvas');
 canvas.width = WIDTH;
 canvas.height = HEIGHT;
 const ctx = canvas.getContext('2d');
+ctx.font = '30px sans-serif';
 
 document.getElementById('myCanvas').appendChild(canvas);
 
-var ball = {
+var sushi = {
     x: 20,
     y: 10,
-    vx: 7,
-    vy: 5,
-    radius: 5,
-    color: '#000000',
+    vx: 5,
+    vy: 2,
+    image: '🍣',
     draw: function() {
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI*2, true);
-        ctx.closePath();
-        ctx.fillStyle = this.color;
-        ctx.fill();
-        // console.log('ball x is ' + this.x + ', and y is ' + this.y);
+        ctx.fillText(this.image, this.x, this.y);
     }
-};
+}
 
 function loop() {
     ctx.clearRect(0,0, WIDTH, HEIGHT);
-    ball.x += ball.vx;
-    ball.y += ball.vy;
-    if (0 > ball.x || ball.x > WIDTH) {
-        ball.vx = ball.vx * -1;
+    sushi.x += sushi.vx;
+    sushi.y += sushi.vy;
+    if (0 > sushi.x || sushi.x > WIDTH) {
+        sushi.vx = sushi.vx * -1;
     }
-    if (0 > ball.y || ball.y > HEIGHT) {
-        ball.vy = ball.vy * -1;
+    if (0 > sushi.y || sushi.y > HEIGHT) {
+        sushi.vy = sushi.vy * -1;
     }
-    ball.draw();
+    sushi.draw();
     requestAnimationFrame(loop);
 }
 
