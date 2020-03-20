@@ -1,30 +1,18 @@
-# resume
+# Resume
 
-## 基本情報
+## Info
 
-#### 氏名
+| key | value |
+| :-- | :-- |
+| Name | 松尾 将哉（旧姓 渡邉）（まつお まさや） |
+| Birth | 1992年11月12日 |
+| Blood Type | A |
+| MailTo | sfbgwm30[at]gmail.com |
+| Academic Background | 慶應義塾大学経済学部（2012年4月 - 2016年3月） |
 
-松尾 将哉（旧姓 渡邉）（まつお まさや）
+## Works
 
-#### 生年月日
-
-1992年11月12日
-
-#### 血液型
-
-A型
-
-#### メールアドレス
-
-sfbgwm30[at]gmail.com
-
-#### 学籍
-
-慶應義塾大学経済学部（2012年4月 - 2016年3月）
-
-## 業務経験
-
-### 職務経歴
+### Career
 
 #### SCSK株式会社[201604 - now]
 
@@ -36,7 +24,9 @@ sfbgwm30[at]gmail.com
 - 生命保険会社向け コールセンター更改
 - 銀行向け 勘定系システム更改
 
-### 経験技術
+詳細作成中
+
+### Experience
 
 #### Programming Language
 
@@ -50,12 +40,17 @@ OracleDB / HiRDB
 
 Subversion / Git / GitHub
 
-### 取得資格
+### Certificates
 
 - TOEIC 855 [202002]
 - 応用情報処理技術者[201612]
 - 基本情報処理技術者[201606]
 
-## 自己PR
+## Summary
 
 under construction
+
+## Other
+
+- [Gopher Dojo #5](https://gopherdojo.connpass.com/)
+- [AtCoder](https://atcoder.jp/users/matsuyoshi)
