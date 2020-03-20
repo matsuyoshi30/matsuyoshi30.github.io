@@ -1,4 +1,6 @@
-# 基本情報
+# resume
+
+## 基本情報
 
 #### 氏名
 
@@ -14,17 +16,17 @@ A型
 
 #### メールアドレス
 
-sfbgwm30@gmail.com
+sfbgwm30[at]gmail.com
 
 #### 学籍
 
 慶應義塾大学経済学部（2012年4月 - 2016年3月）
 
-# 業務経験
+## 業務経験
 
-## 職務経歴
+### 職務経歴
 
-### SCSK株式会社[201604 - now]
+#### SCSK株式会社[201604 - now]
 
 - 証券会社向け 対外報告文書システム化
 - 証券会社向け IFRS（国際会計基準）任意適用に向けた早期化対応
@@ -34,28 +36,26 @@ sfbgwm30@gmail.com
 - 生命保険会社向け コールセンター更改
 - 銀行向け 勘定系システム更改
 
-## 経験技術
+### 経験技術
 
-### Programming Language
+#### Programming Language
 
 Java / SQL / PLSQL / VBA / Shell / HTML / CSS
 
-### DB
+#### DB
 
 OracleDB / HiRDB
 
-### Tool
+#### Tool
 
 Subversion / Git / GitHub
 
-## 取得資格
+### 取得資格
 
 - TOEIC 855 [202002]
 - 応用情報処理技術者[201612]
 - 基本情報処理技術者[201606]
 
-# PR
+## 自己PR
 
 under construction
-
-

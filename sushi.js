@@ -1,4 +1,6 @@
 'use strict';
+(function () {
+
 const WIDTH = document.getElementById('myCanvas').clientWidth;
 const HEIGHT = document.getElementById('myCanvas').clientHeight;
 // console.log('WIDTH is ' + WIDTH + ', HEIGHT is ' + HEIGHT);
@@ -12,8 +14,8 @@ ctx.font = '30px sans-serif';
 document.getElementById('myCanvas').appendChild(canvas);
 
 var sushi = {
-    x: 20,
-    y: 10,
+    x: 80,
+    y: 40,
     vx: 5,
     vy: 2,
     image: '🍣',
@@ -26,10 +28,10 @@ function loop() {
     ctx.clearRect(0,0, WIDTH, HEIGHT);
     sushi.x += sushi.vx;
     sushi.y += sushi.vy;
-    if (0 > sushi.x || sushi.x > WIDTH) {
+    if (0 > sushi.x || sushi.x > WIDTH-30) {
         sushi.vx = sushi.vx * -1;
     }
-    if (0 > sushi.y || sushi.y > HEIGHT) {
+    if (30 > sushi.y || sushi.y > HEIGHT) {
         sushi.vy = sushi.vy * -1;
     }
     sushi.draw();
@@ -37,3 +39,5 @@ function loop() {
 }
 
 loop();
+
+}) ();

@@ -26,11 +26,12 @@ body {
     width: 50%;
     padding: 0;
     margin: auto;
+    display: block;
     position: absolute;
-    top: 25%;
+    top: 10%;
     left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
     text-align: center;
     line-height: 1.5;
     color: #333333;
@@ -38,39 +39,51 @@ body {
     user-select: none;
 }
 
-.header {
-    margin-bottom: 10px;
-}
-
-h1 {
-    font-size: 20px;
-}
-
-h1 a {
-    color: #000000;
-    text-decoration: none;
+img {
+    width: 128px;
+    height: 128px;
 }
 
 h2 {
     font-size: 16px;
-}
-
-h1, h2 {
     position: relative;
 }
 
-.link-list {
+#contents label {
+    display: block;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    margin: auto;
+    width: 100%;
+}
+
+#contents label:hover {
+    color: #0040FF;
+}
+
+#contents input {
+    display: none;
+}
+
+#link-list {
+    display: none;
+    height: auto;
+    padding: 0;
     letter-spacing: 1px;
+    background-color: rgba(255,255,255,0);
+    transition: 0.8s;
 }
 
-.short-introduction {
-    display: inline-block;
-    text-align: left;
-    margin-bottom: 10px;
-}
-
-.short-introduction p {
-    line-height: 2em;
+#contents input:checked ~ #link-list {
+    display: block;
+    height: auto;
+    padding: 0;
+    letter-spacing: 1px;
+    opacity: 1;
+    transition: 0.8s;
 }
 
 p {
