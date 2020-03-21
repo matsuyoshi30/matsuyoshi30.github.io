@@ -52,5 +52,5 @@ function loop(timestamp) {
 window.requestAnimationFrame((ts) => loop(ts));
 
 window.addEventListener('click', event => {
-    objects.push(new Sushi(event.x, event.y, getRandomInt(5, 1), getRandomInt(5, 1)));
+    objects.push(new Sushi(event.x, event.y, getRandomInt(5, -5), getRandomInt(5, -5)));
 });
