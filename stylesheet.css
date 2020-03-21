@@ -95,9 +95,24 @@ p {
 p a {
     color: #999999;
     text-decoration: none;
-    transition: color .2s ease;
+    position: relative;
+    display: inline-block;
 }
 
-a:hover {
-    color: #0080FF;
+p a::after {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #AAAAAA;
+    transform: scale(0, 1);
+    transform-origin: center top;
+    transition: transform .3s;
+}
+
+p a:hover::after {
+    transform: scale(1, 1);
+    color: #AAAAAA;
 }
