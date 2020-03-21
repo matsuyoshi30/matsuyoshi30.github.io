@@ -11,12 +11,12 @@ ctx.font = '30px sans-serif';
 document.getElementById('myCanvas').appendChild(canvas);
 
 class Sushi {
-    constructor(x, y, vx, vy) {
+    constructor(x, y, vx, vy, sushiFlag) {
         this.x = x;
         this.y = y;
         this.vx = vx;
         this.vy = vy;
-        this.image = '🍣';
+        sushiFlag ? this.image = '🍣' : this.image = '☕';
     }
     update() {
         if(0 > this.x || this.x > WIDTH-30) {
@@ -27,6 +27,9 @@ class Sushi {
             this.vy = this.vy * -1;
         }
         this.y += this.vy;
+    }
+    changeImage() {
+        this.image == '🍣' ? this.image = '☕' : this.image = '🍣';
     }
     draw(ctx) {
         ctx.fillText(this.image, this.x, this.y);
@@ -39,8 +42,10 @@ function getRandomInt(max, min) {
     return Math.floor((Math.random() * (max-min)) + min);
 }
 
+let sushiFlag = true;
+
 const objects = [];
-objects.push(new Sushi(80, 40, 5, 2));
+objects.push(new Sushi(80, 40, 5, 2, sushiFlag));
 
 function loop(timestamp) {
     ctx.clearRect(0, 0, WIDTH, HEIGHT);
@@ -52,5 +57,27 @@ function loop(timestamp) {
 window.requestAnimationFrame((ts) => loop(ts));
 
 window.addEventListener('click', event => {
-    objects.push(new Sushi(event.x, event.y, getRandomInt(5, -5), getRandomInt(5, -5)));
+    objects.push(new Sushi(event.x, event.y, getRandomInt(5, -5), getRandomInt(5, -5), sushiFlag));
+});
+
+const label = document.getElementById('cblabel');
+label.addEventListener('click', event => {
+    event.stopPropagation();
+});
+const cb = document.getElementById('cb');
+cb.addEventListener('click', event => {
+    event.stopPropagation();
+});
+const links = document.querySelectorAll('.link');
+links.forEach(function (target) {
+    target.addEventListener('click', event => {
+        event.stopPropagation();
+    });
+});
+
+const img = document.getElementById('img');
+img.addEventListener('click', event => {
+    event.stopPropagation();
+    objects.forEach((obj) => obj.changeImage());
+    sushiFlag = !sushiFlag;
 });
