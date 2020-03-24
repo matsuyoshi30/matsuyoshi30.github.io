@@ -9,5 +9,23 @@ module.exports = {
     extensions: [
       '.js'
     ]
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css/,
+        use: [
+          "style-loader",
+          {
+            loader: "css-loader",
+            options: { url: false }
+          }
+        ]
+      },
+      {
+        test: /\.(jpg|png)$/,
+        loaders: 'url-loader'
+      },
+    ]
   }
 };
