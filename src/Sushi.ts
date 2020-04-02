@@ -1,5 +1,10 @@
 export default class Sushi {
-    constructor(canvas, context, x, y, vx, vy, sushiFlag) {
+    x: number;
+    y: number;
+    vx: number;
+    vy: number;
+    image: string;
+    constructor(canvas:HTMLCanvasElement, context:CanvasRenderingContext2D, x:number, y:number, vx:number, vy:number, sushiFlag:boolean) {
         this.x = x;
         this.y = y;
         this.vx = vx;
@@ -7,7 +12,7 @@ export default class Sushi {
         sushiFlag ? this.image = '🍣' : this.image = '☕';
     }
 
-    update(width, height) {
+    update(width:number, height:number) {
         if (0 > this.x || this.x > width - 30) {
             this.vx = this.vx * -1;
         }
@@ -20,7 +25,7 @@ export default class Sushi {
     changeImage() {
         this.image == '🍣' ? this.image = '☕' : this.image = '🍣';
     }
-    draw(context) {
+    draw(context:CanvasRenderingContext2D) {
         context.fillText(this.image, this.x, this.y);
     }
 }

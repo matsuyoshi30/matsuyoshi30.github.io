@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/index.ts',
   mode: 'production',
   output: {
     path: __dirname,
@@ -7,7 +7,7 @@ module.exports = {
   },
   resolve: {
     extensions: [
-      '.js'
+      '.ts', '.js'
     ]
   },
   module: {
@@ -26,6 +26,9 @@ module.exports = {
         test: /\.(jpg|png)$/,
         loaders: 'url-loader'
       },
+      {
+          test:/\.ts$/,loader:'ts-loader'
+      }
     ]
   }
 };
