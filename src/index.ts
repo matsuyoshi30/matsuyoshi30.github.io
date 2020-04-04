@@ -1,13 +1,6 @@
 import Sushi from "./Sushi"
 import {getRandomInt, loop} from "./util"
 import "./stylesheet.css"
-import jpg from './icon.jpg'
-
-let imgJpg = document.createElement('img')
-imgJpg.src = jpg
-imgJpg.alt = "matsuyoshi30.net"
-imgJpg.id = "img"
-document.getElementById('icon')!.appendChild(imgJpg)
 
 const myCanvas = document.getElementById('myCanvas')
 const WIDTH = myCanvas!.clientWidth;
