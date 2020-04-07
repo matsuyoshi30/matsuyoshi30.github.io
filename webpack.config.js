@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './src/index.ts',
+  entry: './src/index.tsx',
   mode: 'production',
   output: {
     path: __dirname,
@@ -7,7 +7,7 @@ module.exports = {
   },
   resolve: {
     extensions: [
-      '.ts', '.js'
+      '.ts', '.tsx', '.js', '.jsx'
     ]
   },
   module: {
@@ -27,8 +27,14 @@ module.exports = {
         loaders: 'url-loader'
       },
       {
-          test:/\.ts$/,loader:'ts-loader'
-      }
+        test: /\.ts(x?)$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: "ts-loader"
+          }
+        ]
+    },
     ]
-  }
+  },
 };

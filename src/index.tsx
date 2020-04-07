@@ -1,6 +1,11 @@
+import React from 'react';
+import ReactDOM from "react-dom";
+import { List } from "./List";
 import Sushi from "./Sushi"
 import {getRandomInt, loop} from "./util"
-import "./stylesheet.css"
+
+const app = document.querySelector('#app')
+ReactDOM.render(<List />, app)
 
 const myCanvas = document.getElementById('myCanvas')
 const WIDTH = myCanvas!.clientWidth;
