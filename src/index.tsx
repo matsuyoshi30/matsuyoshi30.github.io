@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from "react-dom";
 import { List } from "./components/List";
-// RESUME
+// import { Resume } from "./components/Resume"
 
 import Sushi from "./components/Sushi"
 import {getRandomInt, loop} from "./util"
 
-export class App extends React.Component {
+class App extends React.Component {
     render() {
         return (
             <List />
@@ -16,6 +16,9 @@ export class App extends React.Component {
 
 const app = document.querySelector('#app')
 ReactDOM.render(<App />, app)
+
+// const resume = document.querySelector('#resume')
+// ReactDOM.render(<Resume />, resume)
 
 // TODO: 整備予定
 
