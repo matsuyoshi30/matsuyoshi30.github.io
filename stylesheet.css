@@ -68,7 +68,7 @@ h2 {
     display: none;
 }
 
-#link-list {
+#app {
     display: none;
     height: auto;
     padding: 0;
@@ -77,7 +77,7 @@ h2 {
     transition: 0.8s;
 }
 
-#contents input:checked ~ #link-list {
+#contents input:checked ~ #app {
     display: block;
     height: auto;
     padding: 0;
@@ -97,6 +97,10 @@ p a {
     text-decoration: none;
     position: relative;
     display: inline-block;
+}
+
+p a.disabled{
+    pointer-events: none;
 }
 
 p a::after {

@@ -1,6 +1,26 @@
-import Sushi from "./Sushi"
+import React from 'react';
+import ReactDOM from "react-dom";
+import { List } from "./components/List";
+// import { Resume } from "./components/Resume"
+
+import Sushi from "./components/Sushi"
 import {getRandomInt, loop} from "./util"
-import "./stylesheet.css"
+
+class App extends React.Component {
+    render() {
+        return (
+            <List />
+        );
+    }
+}
+
+const app = document.querySelector('#app')
+ReactDOM.render(<App />, app)
+
+// const resume = document.querySelector('#resume')
+// ReactDOM.render(<Resume />, resume)
+
+// TODO: 整備予定
 
 const myCanvas = document.getElementById('myCanvas')
 const WIDTH = myCanvas!.clientWidth;
