@@ -1,4 +1,4 @@
-import Sushi from "./Sushi";
+import Sushi from "./components/Sushi";
 
 export const getRandomInt = (max:number, min:number) => {
     max = Math.floor(max);

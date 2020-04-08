@@ -99,6 +99,10 @@ p a {
     display: inline-block;
 }
 
+p a.disabled{
+    pointer-events: none;
+}
+
 p a::after {
     position: absolute;
     bottom: -1px;
