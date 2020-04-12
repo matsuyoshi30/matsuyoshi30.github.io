@@ -44,7 +44,7 @@ img {
     height: 128px;
 }
 
-h2 {
+#subtitle {
     font-size: 16px;
     position: relative;
 }
@@ -86,24 +86,24 @@ h2 {
     transition: 0.8s;
 }
 
-p {
+#app p {
     font-size: 14px;
     line-height: 2em;
     margin: 0;
 }
 
-p a {
+#app p a {
     color: #999999;
     text-decoration: none;
     position: relative;
     display: inline-block;
 }
 
-p a.disabled{
+#app p a.disabled{
     pointer-events: none;
 }
 
-p a::after {
+#app p a::after {
     position: absolute;
     bottom: -1px;
     left: 0;
@@ -116,7 +116,63 @@ p a::after {
     transition: transform .3s;
 }
 
-p a:hover::after {
+#app p a:hover::after {
     transform: scale(1, 1);
     color: #AAAAAA;
+}
+
+#resume {
+    width: 25%;
+    padding: 0;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    text-align: center;
+    line-height: 1.5;
+    color: #333333;
+    background-color: rgba(255,255,255,0.75);
+}
+
+#resume-contents {
+    text-align: left;
+}
+
+#resume #label {
+    display: block;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    margin: auto;
+    width: 100%;
+}
+
+#resume table {
+    display: block;
+}
+
+#resume a {
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+#resume a.disabled{
+    pointer-events: none;
+}
+
+#resume a:hover {
+    color: #0040FF;
+}
+
+@media (max-width: 480px) {
+    #resume {
+        width: 50%;
+     }
 }

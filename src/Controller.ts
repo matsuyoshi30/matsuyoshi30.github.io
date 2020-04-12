@@ -1,4 +1,4 @@
-import Sushi from "./components/Sushi"
+import Sushi from "./Sushi"
 
 export default class Controller {
     private context: CanvasRenderingContext2D
