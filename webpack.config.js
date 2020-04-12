@@ -3,7 +3,8 @@ module.exports = {
   mode: 'production',
   output: {
     path: __dirname,
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: '/'
   },
   resolve: {
     extensions: [
@@ -36,5 +37,8 @@ module.exports = {
         ]
     },
     ]
+  },
+  devServer: {
+    historyApiFallback: true,
   },
 };
