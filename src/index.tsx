@@ -33,8 +33,8 @@ function RouteList() {
     return (
       <div>
         <Switch location={background || location}>
-            <Route exact path="/" component={LinkList} />
-            <Route path="/resume" component={MyResume} />
+            <Route exact path="/"><LinkList /></Route>
+            <Route path="/resume"><MyResume /></Route>
         </Switch>
       </div>
     );
