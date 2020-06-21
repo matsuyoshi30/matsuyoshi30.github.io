@@ -17,7 +17,7 @@ const iconImg = document.querySelector('#iconImg') as HTMLImageElement
 window.onload = () => {
     Controller.start(myCanvas, canvasWrapper, iconImg)
 }
-    
+
 export default function App() {
     return (
         <Router>
@@ -29,7 +29,7 @@ export default function App() {
 function RouteList() {
     let location = useLocation<{ background?: Location}>();
     const background = location.state?.background;
-  
+
     return (
       <div>
         <Switch location={background || location}>
@@ -47,7 +47,7 @@ function LinkList() {
             <p><a href="https://github.com/matsuyoshi30" target="_blank" rel="noopener noreferrer" className="link">GitHub</a></p>
             <p><a href="https://blog.matsuyoshi30.net" target="_blank" rel="noopener noreferrer" className="link">Blog</a></p>
             <p><a href="https://twitter.com/matsuyoshi30" target="_blank" rel="noopener noreferrer" className="link">Twitter</a></p>
-            <p><a href="https://matsuyoshi30.hatenablog.com" target="_blank" rel="noopener noreferrer" className="link">Diary</a></p>
+            <p><a href="https://diary.matsuyoshi30.net" target="_blank" rel="noopener noreferrer" className="link">Diary</a></p>
             <p><a href="https://til.matsuyoshi30.net/" className="link">TIL</a></p>
         </div>
     );
