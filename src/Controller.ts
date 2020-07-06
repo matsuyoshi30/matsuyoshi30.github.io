@@ -20,6 +20,7 @@ export default class Controller {
     }
 
     public start() {
+        this.addSushi(new MouseEvent("initial", undefined));
         this.wrapper.onclick = e => this.addSushi(e);
         this.img.onclick = () => {
             this.objects.forEach((obj) => obj.changeImage())

@@ -6,8 +6,8 @@ export default class Sushi {
     private image: string;
 
     constructor(private e: MouseEvent, private wrapper: HTMLDivElement, private context: CanvasRenderingContext2D, sushiFlag: boolean) {
-        this.x = e.clientX
-        this.y = e.clientY
+        e.type == "initial" ? this.x = 300 : this.x = e.clientX;
+        e.type == "initial" ? this.y = 400 : this.y = e.clientY;
         this.vx = this.getRandomInt(5, -5)
         this.vy = this.getRandomInt(5, -5)
         sushiFlag ? this.image = '🍣' : this.image = '☕'

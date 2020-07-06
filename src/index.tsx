@@ -14,9 +14,10 @@ import "./stylesheet.css"
 const myCanvas = document.querySelector('#myCanvas') as HTMLCanvasElement
 const canvasWrapper = document.querySelector('#canvas-wrapper') as HTMLDivElement
 const iconImg = document.querySelector('#iconImg') as HTMLImageElement
+
 window.onload = () => {
-    Controller.start(myCanvas, canvasWrapper, iconImg)
-}
+    Controller.start(myCanvas, canvasWrapper, iconImg);
+};
 
 export default function App() {
     return (
