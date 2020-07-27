@@ -49,7 +49,7 @@ function LinkList() {
             <p><a href="https://blog.matsuyoshi30.net" target="_blank" rel="noopener noreferrer" className="link">Blog</a></p>
             <p><a href="https://twitter.com/matsuyoshi30" target="_blank" rel="noopener noreferrer" className="link">Twitter</a></p>
             <p><a href="https://diary.matsuyoshi30.net" target="_blank" rel="noopener noreferrer" className="link">Diary</a></p>
-            <p><a href="https://til.matsuyoshi30.net/" target="_blank" rel="noopener noreferrer" className="link">TIL</a></p>
+            <p><a href="https://shuho.matsuyoshi30.net/" target="_blank" rel="noopener noreferrer" className="link">Shuho</a></p>
         </div>
     );
 }
