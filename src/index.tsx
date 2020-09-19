@@ -11,12 +11,15 @@ import { Location } from 'history';
 import Controller from "./Controller"
 import "./stylesheet.css"
 
-const myCanvas = document.querySelector('#myCanvas') as HTMLCanvasElement
-const canvasWrapper = document.querySelector('#canvas-wrapper') as HTMLDivElement
-const iconImg = document.querySelector('#iconImg') as HTMLImageElement
-
 window.onload = () => {
+    const myCanvas = document.querySelector('#myCanvas') as HTMLCanvasElement
+    const canvasWrapper = document.querySelector('#canvas-wrapper') as HTMLDivElement
+    const iconImg = document.querySelector('#iconImg') as HTMLImageElement
+
     Controller.start(myCanvas, canvasWrapper, iconImg);
+
+    const app = document.querySelector('#app')
+    ReactDOM.render(<App />, app)
 };
 
 export default function App() {
@@ -131,6 +134,3 @@ function MyResume() {
         </div>
     );
 }
-
-const app = document.querySelector('#app')
-ReactDOM.render(<App />, app)
