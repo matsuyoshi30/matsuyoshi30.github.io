@@ -82,7 +82,7 @@ function MyResume() {
           <a href="https://www.linkedin.com/in/masaya-watanabe-67a03910a/" target="_blank" rel="noopener noreferrer" className="resume-link">LinkedIn</a>&nbsp;/&nbsp;
           <a href="https://www.wantedly.com/users/128963014" target="_blank" rel="noopener noreferrer" className="resume-link">Wantedly</a>&nbsp;/&nbsp;
           <a href="https://findy-code.io/share_profiles/wCUN34hZPle5A" target="_blank" rel="noopener noreferrer" className="resume-link">Findy</a>&nbsp;/&nbsp;
-          <a href="https://lapras.com/public/ZURYOWL" target="_blank" rel="noopener noreferrer" className="resume-link">Lapras</a>
+          <a href="https://lapras.com/public/matsuyoshi30" target="_blank" rel="noopener noreferrer" className="resume-link">Lapras</a>
         </p>
       </div>
       <h2>Works</h2>
