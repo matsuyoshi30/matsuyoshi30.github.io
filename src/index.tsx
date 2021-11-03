@@ -101,6 +101,14 @@ function MyResume() {
           switch git user easily
         </li>
         <li>
+          <a href="https://github.com/matsuyoshi30/germanium" target="_blank" rel="noopener noreferrer" className="resume-link">germanium</a><br />
+          generate image from source code
+        </li>
+        <li>
+          <a href="https://github.com/matsuyoshi30/germanium-el" target="_blank" rel="noopener noreferrer" className="resume-link">germanium.el</a><br />
+          Emacs Package for generating image from source code using germanium
+        </li>
+        <li>
           <a href="https://github.com/matsuyoshi30/mmcc" target="_blank" rel="noopener noreferrer" className="resume-link">mmcc</a><br />
           self-hosted C compiler except the C preprocessor
         </li>
