@@ -124,22 +124,6 @@ function MyResume() {
           <a href="https://github.com/matsuyoshi30/gomaze" target="_blank" rel="noopener noreferrer" className="resume-link">gomaze</a><br />
           a cli tool to play maze
         </li>
-        <li>
-          <a href="https://github.com/matsuyoshi30/gorec" target="_blank" rel="noopener noreferrer" className="resume-link">gorec</a><br />
-          <strong>[archived]</strong> simple terminal recorder
-        </li>
-        <li>
-          <a href="https://github.com/matsuyoshi30/gocp" target="_blank" rel="noopener noreferrer" className="resume-link">gocp</a><br />
-          <strong>[suspended]</strong> an atcoder cli tool
-        </li>
-        <li>
-          <a href="https://github.com/matsuyoshi30/go-trendrepo" target="_blank" rel="noopener noreferrer" className="resume-link">go-trendrepo</a><br />
-          check trending and recently made GitHub repository
-        </li>
-        <li>
-          <a href="https://github.com/matsuyoshi30/go-imgdl" target="_blank" rel="noopener noreferrer" className="resume-link">go-imgdl</a><br />
-          image downloader
-        </li>
       </ul>
       <h3>Certificates</h3>
       <ul>
