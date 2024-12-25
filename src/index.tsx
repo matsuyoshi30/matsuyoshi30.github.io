@@ -87,7 +87,8 @@ function MyResume() {
       <h2>Works</h2>
       <h3>Career</h3>
       <ul>
-        <li><a href="https://www.cloudsign.jp/" target="_blank" rel="noopener noreferrer" className="resume-link">Bengo4.com,Inc. (CloudSign)</a> [202010 - now]</li>
+        <li><a href="https://henry.jp/" target="_blank" rel="noopener noreferrer" className="resume-link">Henry, Inc.</a> [202410 - now]</li>
+        <li><a href="https://www.cloudsign.jp/" target="_blank" rel="noopener noreferrer" className="resume-link">Bengo4.com, Inc. (CloudSign)</a> [202010 - 202409]</li>
         <li><a href="https://www.scsk.jp/" target="_blank" rel="noopener noreferrer" className="resume-link">SCSK Corporation</a> [201604 - 202009]</li>
       </ul>
       <h3>Personal Projects</h3>
